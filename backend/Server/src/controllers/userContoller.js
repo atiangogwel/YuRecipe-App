@@ -1,6 +1,6 @@
 const { createUser,getAllUsers,updateUser } = require('../Queries/userQuery');
 
-// Controller function to create a new user
+// controller function to create a new user
 const createUserController = (req, res) => {
   const userData = req.body; // Assuming user data is sent in the request body
   
@@ -15,7 +15,7 @@ const createUserController = (req, res) => {
 };
 
 
-//get all users
+// get all users
 const getAllUsersController = (req, res) => {
   getAllUsers((error, results) => {
     if (error) {
